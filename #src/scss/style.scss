@@ -58,6 +58,7 @@ body {
 	&__head {
 		display: flex;
 		padding: 100px 0;
+		align-items: center;
 		
 	}
 
@@ -86,6 +87,31 @@ body {
 
 	&__slider {
 		width: 50%;
+		.slick-dots {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			li {
+				text-align: center;
+				button {
+					font-size: 0;
+					width: 8px;
+					height: 8px;
+					background-color: #332208;
+					border-radius: 50%;
+				}
+			}
+			.slick-active {
+				button {
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+		.slick-track {
+			left: -25px;
+		}
 	}
 
 	&__sider-item {
